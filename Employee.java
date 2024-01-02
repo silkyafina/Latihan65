@@ -12,7 +12,7 @@ package pkg22166017.pbo.lat65;
  * Prodi    : Sistem Informasi
  * Matkul   : PBO 1
  */
-public class Employee {
+public abstract class Employee {
     private String name;
      
     public Employee(String name){
@@ -24,10 +24,10 @@ public class Employee {
     public void setName(){
         this.name = name;
     }
-    public void work(){
+    public abstract void work();
         
     }
-}
+
 class Manager extends Employee{
     
     public Manager(String name) {
@@ -68,4 +68,4 @@ public static void main(String[]args){
     D.work();
 
 }
-}
+    }
